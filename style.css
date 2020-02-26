@@ -53,19 +53,19 @@ p, li {
 /* || header layout */
 
 .header {
-  background-color: darkred;
+  background-color: blue;
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
 }
 
 body > * {
-  background-color:yellow;
+  background-color: gold;
   padding: 1%;
 }
 
 .two {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 1%;
 }
 .one{
