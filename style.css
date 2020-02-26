@@ -80,10 +80,11 @@ body > * {
   width: 175px;
   border: 0.5rem outset #E675FF;
   border-radius: 30px;
+  padding-top: 20.15px;
 }
 .caption{
   background-color: white;
-  padding: 10%;
+  padding: 1%;
 }
 
 h1 {
