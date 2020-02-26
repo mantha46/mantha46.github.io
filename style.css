@@ -53,14 +53,14 @@ p, li {
 /* || header layout */
 
 .header {
-  background-color: blue;
+  background-color:#9A2EB3;
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
 }
 
 body > * {
-  background-color: gold;
+  background-color:#BBFF5C;
   padding: 1%;
 }
 
