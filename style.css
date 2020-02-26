@@ -60,8 +60,6 @@ body > * {
   padding: 1%;
 }
 .one{
-  border-radius: 1px;
-  border: 0.5rem outset #E675FF;
   
 }
 .wrapper{
@@ -77,6 +75,8 @@ body > * {
   height: 175px;
   width: 175px;
   padding-top: 20.15px;
+  border-radius: 1px;
+  border: 0.5rem outset #E675FF;
 }
 .caption{
   background-color: white;
