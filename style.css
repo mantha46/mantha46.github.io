@@ -63,6 +63,9 @@ body > * {
 .one{
 
 }
+.container{
+  display: flex;
+}
 .one img{
   margin-left: 10px;
   display: block;
