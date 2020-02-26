@@ -60,7 +60,9 @@ body > * {
   padding: 1%;
 }
 .one{
-  
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1%;
 }
 .wrapper{
   justify-content: center;
