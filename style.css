@@ -61,14 +61,14 @@ body > * {
 }
 .one{
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   padding: 1%;
-  flex: 1 1 auto;
+  flex: 33.33%;
 }
 .two {
   background-color: rgb(255, 255, 255);
   padding: 1%;
-  flex:2 1 auto;
+  flex: 66.66%;
 }
 .one img{
   display: block;
@@ -84,6 +84,12 @@ body > * {
 }
 .jobtitle{
   font-style: italic;
+}
+.jobdesc{
+font-size:1.5rem;
+}
+.resp{
+  font-size: 1.3rem;
 }
 h1 {
   flex: 5;
