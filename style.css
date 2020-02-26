@@ -78,7 +78,7 @@ body > * {
   display: block;
   height: 175px;
   width: 175px;
-  padding-top: 20.15px;
+  padding: 1%;
   border: 0.5rem outset #E675FF;
   border-radius: 30px;
 }
