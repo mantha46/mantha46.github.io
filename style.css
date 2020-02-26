@@ -1,3 +1,14 @@
+.one{
+
+}
+.caption{
+  background-color: aliceblue;
+  padding: 1%;
+}
+.header{
+  background-color: blue;
+
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -16,9 +27,13 @@ html, body {
   
   /* || typography */
   
-  h1, h2, h3 {
+  h1 {
     font-family: 'Lemonada', cursive;
-    color: #2a2a2a;
+    color: cyan;
+  }
+  h2 {
+    font-family: 'Lemonada', cursive;
+    color: cyan;
   }
   
   p, input, li {
@@ -36,11 +51,6 @@ html, body {
   h2 {
     font-size: 3rem;
     text-align: center;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 2.2rem;
     font-weight: 700;
   }
   
@@ -84,20 +94,20 @@ html, body {
     display: flex;
   }
   
-  nav ul {
+   ul {
     padding: 0;
     list-style-type: none;
     flex: 2;
     display: flex;
   }
   
-  nav li {
+   li {
     display: inline;
     text-align: center;
     flex: 1;
   }
   
-  nav a, nav span {
+   a, span {
     display: inline-block;
     font-size: 2rem;
     height: 3rem;
@@ -132,8 +142,4 @@ html, body {
   
   aside img {
     max-width: 100%;
-  }
-  
-  footer {
-    margin-top: 10px;
   }
