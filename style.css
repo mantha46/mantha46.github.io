@@ -100,3 +100,9 @@ h1 {
   height: 100px;
   padding-top: 20.15px;
 }
+
+@media screen and (max-width:1000px){
+  .one{
+    flex-direction: row;
+  }
+}
