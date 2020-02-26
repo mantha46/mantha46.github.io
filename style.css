@@ -54,11 +54,10 @@ body > * {
   background-color:#BBFF5C;
   padding: 1%;
 }
-
-.two {
-  background-color: rgb(255, 255, 255);
-  padding: 1%;
-  flex:2 1 auto;
+.container{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .one{
   display: flex;
@@ -66,27 +65,26 @@ body > * {
   padding: 1%;
   flex: 1 1 auto;
 }
-.wrapper{
-  justify-content: center;
-}
-.container{
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 960px;
+.two {
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  flex:2 1 auto;
 }
 .one img{
   display: block;
   height: 175px;
   width: 175px;
-  border: 0.5rem outset #E675FF;
-  border-radius: 30px;
+  border: 1px solid #E675FF;
+  border-radius: 4px;
   margin: 25px;
 }
 .caption{
   background-color: white;
   padding: 1%;
 }
-
+.jobtitle{
+  font-style: italic;
+}
 h1 {
   flex: 5;
   text-transform: uppercase;
@@ -100,6 +98,9 @@ h1 {
 }
 
 @media screen and (max-width:1000px){
+  .container{
+    flex-direction: column;
+  }
   .one{
     flex-direction: row;
   }
