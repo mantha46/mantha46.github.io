@@ -58,11 +58,13 @@ body > * {
 .two {
   background-color: rgb(255, 255, 255);
   padding: 1%;
+  flex-basis: 66.66%;
 }
 .one{
   display: flex;
   flex-flow: row wrap;
   padding: 1%;
+  flex-basis: 33.33%;
 }
 .wrapper{
   justify-content: center;
