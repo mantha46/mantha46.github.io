@@ -65,7 +65,7 @@ body > * {
 }
 .container{
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 .one img{
   margin-left: 10px;
