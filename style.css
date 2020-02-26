@@ -58,6 +58,7 @@ body > * {
 .two {
   background-color: rgb(255, 255, 255);
   padding: 1%;
+  flex-basis:66.66%;
 }
 .one{
   
@@ -77,10 +78,12 @@ body > * {
   padding-top: 20.15px;
   border: 0.5rem outset #E675FF;
   border-radius: 30px;
+  flex-basis:33.33%;
 }
 .caption{
   background-color: white;
   padding: 1%;
+  flex-basis:33.33%;
 }
 
 h1 {
