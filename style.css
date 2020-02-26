@@ -61,7 +61,10 @@ body > * {
   padding: 1%;
 }
 .one{
-
+  
+}
+.wrapper{
+  text-align: center;
 }
 .container{
   display: flex;
