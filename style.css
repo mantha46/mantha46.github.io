@@ -6,7 +6,7 @@ body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #bbff5c;
 }
 
 body {
@@ -14,8 +14,10 @@ body {
   min-width: 800px;
   margin: 0 auto;
 }
+div {
+  display: block;
+}
 p,
-input,
 li {
   font-family: "Roboto Condensed", sans-serif;
   color: #2a2a2a;
@@ -101,6 +103,7 @@ body > * {
 }
 .resp {
   font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 h1 {
   flex: 5;
