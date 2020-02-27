@@ -29,12 +29,12 @@ h1 {
   font-size: 4rem;
   text-align: center;
   text-shadow: 2px 2px 10px black;
-  font-family: "Lemonada", cursive;
+  font-family: "Lemonada", serif;
 }
 
 h2 {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-family: "Lemonada", cursive;
   color: #2a2a2a;
 }
@@ -54,6 +54,13 @@ li {
   flex-flow: row wrap;
 }
 
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  top: 50%;
+  left: 50%;
+}
+
 body > * {
   background-color: #bbff5c;
   padding: 1%;
@@ -66,6 +73,7 @@ body > * {
 .one {
   display: flex;
   flex-direction: column;
+  column-width: 100px;
   padding: 1%;
   flex: 33.33%;
   align-items: center;
@@ -76,12 +84,13 @@ body > * {
   flex: 66.66%;
 }
 .one img {
+  height:200px;
+  width: auto;
+  max-width: 100%;
   display: block;
-  height: 175px;
-  width: 175px;
   border: 1px solid #e675ff;
   border-radius: 4px;
-  margin: 25px;
+  margin-right: 25px;
 }
 .caption {
   font-family: "Roboto Condensed", sans-serif;
@@ -90,6 +99,7 @@ body > * {
 }
 .jobtitle {
   font-style: italic;
+  font-weight: bolder;
 }
 .jobdesc {
   font-size: 1.5rem;
@@ -115,5 +125,9 @@ h1 {
   }
   .one {
     flex-direction: row;
+    align-content: space-evenly;
+  }
+  .one img {
+    margin-bottom: 15px;
   }
 }
