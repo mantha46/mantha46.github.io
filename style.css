@@ -14,9 +14,6 @@ body {
   min-width: 800px;
   margin: 0 auto;
 }
-
-/* || typography */
-
 p,
 input,
 li {
@@ -84,7 +81,7 @@ body > * {
   flex: 66.66%;
 }
 .one img {
-  height:200px;
+  height: 200px;
   width: auto;
   max-width: 100%;
   display: block;
