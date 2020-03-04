@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Prof A's Demo Page</title>
+    <title>Vinay's Lab 4</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
 
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="header">Prof A's Demo Page</div>
+        <div class="header">Vinay's Demo Page</div>
         <button class="button" onclick="clickMe()">
           Click me to make a change
         </button>
@@ -27,9 +27,10 @@
     <script>
       function clickMe() {
         const content = document.querySelector(".content");
-        content.innerHTML = "Hello world";
+        let name = "Vinay Mantha";
+        len = name.length;
+        content.innerHTML = "Hello world" + "My name has" + len + "characters";
       }
     </script>
-  <script src="scripts/main.js"></script>
   </body>
 </html>
