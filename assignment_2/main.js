@@ -1,3 +1,4 @@
+/*Completed by Evan Hulse */
 const displayedImage = document.querySelector(".displayed-img");
 const thumbBar = document.querySelector(".thumb-bar");
 
@@ -27,6 +28,6 @@ btn.onclick = function() {
   } else {
     btn.setAttribute("class", "dark");
     btn.textContent = "Darken";
-    overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
+    overlay.style.backgroundColor = "rgba(0,0,0,0)";
   }
 };
