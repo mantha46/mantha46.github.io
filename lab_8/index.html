@@ -10,90 +10,91 @@
       <div class="wrapper">
         <div class="header">Frontend Libraries: Charts Lab</div>
         <div class="content">
-          <div id="chartContainer" style="height: 600px; width: 100%;">
-          </div>
+          <div id="chartContainer" style="height: 600px; width: 100%;"></div>
         </div>
         <div class="footer">Let's eat out in the future!</div>
       </div>
     </div>
     <script>
-      fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json') // replace this with the food safety data set
+      fetch("https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json") // replace this with the food safety data set
         .then((data) => data.json()) // this is an "implicit return" - we're returning the results of the Fetch request to the next step.
-        .then((data) => { // this is an explicit return. If I want my information to go further, I'll need to use the "return" keyword before the brackets close
+        .then((data) => {
+          // this is an explicit return. If I want my information to go further, I'll need to use the "return" keyword before the brackets close
           console.log(data);
-          const clearEmptyData = data.filter((f)=>f.geocoded_column_1);
-          const refined = clearEmptyData.map((m)=>({
+          const clearEmptyData = data.filter((f) => f.geocoded_column_1);
+          const refined = clearEmptyData.map((m) => ({
             category: m.category,
-            name: m.name
+            name: m.name,
           }));
           console.log(refined);
           return refined;
         })
-        .then((data)=>{
-          return data.reduce((result, current)=>{
-            if(!result[current.category]){
-              result[current.category]=[];
+        .then((data) => {
+          return data.reduce((result, current) => {
+            if (!result[current.category]) {
+              result[current.category] = [];
             }
             result[current.category].push(current);
             return result;
           }, {});
         })
-        .then((data)=>{
+        .then((data) => {
           console.log(data);
-          
-          const reformat = []; 
-          Object.keys(data).forEach(function(key) {
-            let eachCat = {label:key,y:data[key].length};
+
+          const reformat = [];
+          Object.keys(data).forEach(function (key) {
+            let eachCat = { label: key, y: data[key].length };
             reformat.push(eachCat);
           });
           console.log(reformat);
           return reformat;
         })
-        .then((results)=>{
+        .then((results) => {
           console.log(results);
           const chart = new CanvasJS.Chart("chartContainer", {
-	          animationEnabled: true,
-	          theme: "light2", 
-	          title:{
-		          text: "Restaurant Type"
-	          },
-            colorSet:"colorSet3",
-            axisY: {
-              title:'Number of Resaurants',
-              interval:10,
-		          scaleBreaks: {
-              type: "zigzag",
-			          customBreaks: [{
-				          startValue: 20,
-				          endValue: 60
-			          },{
-                  startValue: 80,
-				          endValue: 120
-                },{
-                  startValue: 140,
-				          endValue: 180
-                }]
-		          }
-	          },
-            axisX:{
-              title: 'Restaurant Category',
-              labelFontSize:10,
-              margin:10,
-              labelAngle:100,
-              interval:1
+            animationEnabled: true,
+            theme: "light2",
+            title: {
+              text: "Restaurant Type",
             },
-            data: [{
-              
-		          type: "column",
-		          indexLabelFontColor: "#009933",
-      	      indexLabelFontSize: 20,
-		          indexLabelPlacement: "outside",
-		          dataPoints: results
-	          }]
+            colorSet: "colorSet3",
+            axisY: {
+              title: "Number of Resaurants",
+              interval: 10,
+              scaleBreaks: {
+                type: "zigzag",
+                customBreaks: [
+                  {
+                    startValue: 20,
+                    endValue: 60,
+                  },
+                  {
+                    startValue: 80,
+                    endValue: 120,
+                  },
+                  {
+                    startValue: 140,
+                    endValue: 180,
+                  },
+                ],
+              },
+            },
+            axisX: {
+              title: "Restaurant Category",
+              labelFontSize: 10,
+              margin: 10,
+              labelAngle: 100,
+              interval: 1,
+            },
+            data: [
+              {
+                type: "column",
+                dataPoints: results,
+              },
+            ],
           });
           chart.render();
-        })
-        
+        });
     </script>
   </body>
 </html>
